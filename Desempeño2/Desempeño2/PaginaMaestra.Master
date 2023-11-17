@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Desempeño2.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="StyleNavbar.css" rel="stylesheet" />
+    <link href="StyleFooter.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registración.aspx">Registracion</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Gestión de archivos.aspx">Gestión de archivos</asp:HyperLink>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> <!--zona que va a cambiar-->
+            </asp:ContentPlaceHolder>
+            <div class="footer">
+                <p>Agustin verga lobos</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
